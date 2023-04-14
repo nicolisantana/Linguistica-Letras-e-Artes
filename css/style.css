@@ -2,6 +2,8 @@
     --cor1 : #6A0000;
     --cor2 : #FFFFFF;
     --cor3 : #590000;
+    --cor4 : #DEDBD3;
+    --cor5 : #CB1919;
     --fonte : montserrat;
 }
 
@@ -27,17 +29,16 @@ nav{
 
 .capa{
     position: absolute;
-    width: 40vw;
     top: 25vh;
 }
 
 .texto-capa{
     margin-bottom: 5vh;
-    margin-top: 4vh;
+    margin-top: 5vh;
+    width: 39vw;
 }
 
 .b{
-    position: absolute;
     border: var(--cor2) solid 1px;
     padding: 12px;
     border-radius: 50px;
@@ -46,12 +47,87 @@ nav{
 }
 
 .carrossel1{
-    background-color: #A52F26;
     height: 100vh;
+    width: 25vw;
+    overflow: hidden;
+}
+
+.carrossel1 .fotos{
+    height:  165vh;
+    animation: animacao 10s infinite;
+}
+
+.carrossel1 .fotos #img1{
+    height: 19.9%;
+}
+
+@keyframes animacao{
+    0%{margin-top: 0;}
+   20%{margin-top: 0;}
+   25%{margin-top: -100%;}
+   45%{margin-top: -100%;}
+   50%{margin-top: -200%;}
+   70%{margin-top: -200%;}
+   75%{margin-top: -300%;}
+   95%{margin-top: -300%;}
+  100%{margin-top: -400%;}
+}
+
+#img1{
+    margin-top: 2vh;
+    width: 25vw;
+    border-radius: 20px;
 }
 
 .texto{
     text-align: center;
     padding: 10vh;
     width: 70vw;
+}
+
+.conteudo{
+    background-color: var(--cor4);
+    border-radius: 5px;
+    color: #000000;
+    padding: 10vh;
+}
+
+#img-conteudo{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#img-btn{
+    background-color: #9F0909;
+    padding: 8px;
+    border-radius: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.footer{
+    padding-top: 10vh;
+    border-bottom: var(--cor2) solid 1px;
+}
+
+.texto-footer{
+    max-width: 22vw;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+
+#link-f{
+    color: var(--cor2);
+    text-decoration: none;
+    margin: 1vw;
+}
+
+#icon{
+    background-color: var(--cor5);
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5vh;
 }
