@@ -5,90 +5,270 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <script src="js/script.js" type="text/javascript"></script>
-
-    <title>Linguística, Letras e Artes</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
+    <script src="js/script.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 
+    <title>Linguística, Letras e Artes</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" style="font-size: 18px;">
-            <img src="img/icon.png" style="margin-right: 12px; margin-left: 5px;" width="38px">
-            Linguística, Letras e Artes
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" style="font-size: 18px;">
+                <img src="img/logo.png" style="margin-right: 12px; margin-left: 5px;" width="32px">
+                Linguística, Letras e Artes
+                </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                <a class="nav-link" href="#inicio">Ínicio</a>
               </li>
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Graduação
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item " href="#">Licenciatura</a>
-                        <ul class="submenu dropdown-menu">
-                            <li><a class="dropdown-item" href="">curso </a></li>
-                            <li><a class="dropdown-item" href="">curso</a></li>
-                            <li><a class="dropdown-item" href="">curso</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Bacharelado</a></li>
-                    <li><a class="dropdown-item" href="#">Tecnólogoo</a></li>
+                <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" role="button" data-bs-toggle="dropdown">Graduação</a>
+                <ul class="dropdown-menu">
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle btn" data-bs-toggle="dropdown" href="#">Licenciatura</a>
+                    <ul class="dropdown-menu menu">
+                        <li><a href="#letras" class="dropdown-item btn">Letras</a></li>
+                        <li><a href="#linguistica" class="dropdown-item  btn">Linguística</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle btn" data-bs-toggle="dropdown" href="#">Bacharelado</a>
+                    <ul class="dropdown-menu menu">
+                        <li><a href="#ap" class="dropdown-item btn">Artes Plásticas</a></li>
+                        <li><a href="#ac" class="dropdown-item btn">Artes Cênicas</a></li>
+                        <li><a href="#fono" class="dropdown-item btn">Fonoaudiologia</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle btn" data-bs-toggle="dropdown" href="#">Tecnólogo</a>
+                    <ul class="dropdown-menu menu">
+                        <li><a href="#fotografia" class="dropdown-item btn">Fotografia</a></li>
+                        <li><a href="#moda" class="dropdown-item btn">Design de Moda</a></li>
+                        <li><a href="#dg" class="dropdown-item btn">Design Gráfico</a></li>
+                    </ul>
+                </li>
+
                 </ul>
               </li>
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pós-graduação
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Licenciatura</a></li>
-                    <li><a class="dropdown-item" href="#">Bacharelado</a></li>
-                    <li><a class="dropdown-item" href="#">Tecnólogoo</a></li>
+                <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#" role="button" data-bs-toggle="dropdown">Pós-Graduação</a>
+                <ul class="dropdown-menu">
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle btn" data-bs-toggle="dropdown" href="#">Lato-sensu</a>
+                    <ul class="dropdown-menu menu">
+                        <li><a href="#letras" class="dropdown-item btn">Letras</a></li>
+                        <li><a href="#linguistica" class="dropdown-item btn">Linguística</a></li>
+                        <li><a href="#moda" class="dropdown-item btn">Design de Moda</a></li>
+                        <li><a href="#dg" class="dropdown-item btn">Design Gráfico</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle btn" data-bs-toggle="dropdown" href="#">Stricto-sensu</a>
+                    <ul class="dropdown-menu menu">
+                        <li><a href="#ap" class="dropdown-item btn">Artes Plásticas</a></li>
+                        <li><a href="#ac" class="dropdown-item btn">Artes Cênicas</a></li>
+                        <li><a href="#fono" class="dropdown-item btn">Fonoaudiologia</a></li>
+                        <li><a href="#fotografia" class="dropdown-item btn">Fotografia</a></li>
+                    </ul>
+                </li>
                 </ul>
               </li>
+            </ul>
           </div>
         </div>
       </nav>
 
       <header id="inicio">
-        <div class="container" style="height: 100vh;">
+        <div class="container" style="margin: 25vh auto;">
             <div class="row">
+                <div class="col-sm">
+                    <h1 class="display-3 titulo">Linguística,</h1>  
+                    <h1 class="display-3 titulo">Letras e Artes</h1>
 
-                <div class="col-8">
-                    <div class="container capa">
-                        <h1 class="display-2">Linguística,</h1>
-                        <h1 class="display-2">Letras e Artes</h1>
-                        <h5 class="texto-capa">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h5>
-                        <h5 class="d-inline-block b">Lorem ipsum</h5>
-                    </div>
+                    <h5 class="d-inline-block b">
+                        <img src="img/icon.ico" style="margin-right: 12px;" width="32px">
+                        Lorem ipsum
+                    </h5>
                 </div>
 
-                <div class="col-4">
-                    <div class="carrossel1">
-                      <div class="fotos">
-                        <img src="img/img1.jpg" id="img1">
-                        <img src="img/img1.jpg" id="img1">
-                        <img src="img/img1.jpg" id="img1">
-                        <img src="img/img1.jpg" id="img1">
-                        <img src="img/img1.jpg" id="img1">
-                      </div>
+                <div class="col-sm" style="margin: 0 auto;">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Letras</h1>
+                                        <h4><span class="badge graduacao">Licenciatura</span>
+                                            <span class="badge graduacao">Bacharelado</span>
+                                            </h4>
+                        
+                                        <a href="#letras" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Linguística</h1>
+                                        <h4><span class="badge graduacao">Licenciatura</span>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        </h4>
+    
+                                        <a href="#linguistica" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Artes Plásticas</h1>
+                                        <h4><span class="badge graduacao">Licenciatura</span>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        </h4>
+                        
+                                        <a href="#ap" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Artes Cênicas</h1>
+                                        <h4><span class="badge graduacao">Licenciatura</span>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        </h4>
+                        
+                                        <a href="#ac" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Fonoaudiologia</h1>
+                                        <h4>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        </h4>
+                        
+                                        <a href="#fono" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Fotografia</h1>
+                                        <h4>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        <span class="badge graduacao">Tecnólogo</span></h4>
+                        
+                                        <a href="#fotografia" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Design de Moda</h1>
+                                        <h4><span class="badge graduacao">Licenciatura</span>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        <span class="badge graduacao">Tecnólogo</span></h4>
+                        
+                                        <a href="#moda" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card card-1" style="max-width: 28rem; margin: 1vw;">  
+                                    <div class="card-body">
+                                        <h6 class="card-title title-1">
+                                            <img src="img/seta2.png" width=" 30px">
+                                            Cursos
+                                        </h6>
+                                        <h1 class="title-2">Design Gráfico</h1>
+                                        <h4>
+                                        <span class="badge graduacao">Bacharelado</span>
+                                        <span class="badge graduacao">Tecnólogo</span></h4>
+                        
+                                        <a href="#dg" class="btn btn-card">
+                                            <img src="img/seta.png" width="35px">
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
 
             </div>
@@ -96,205 +276,1631 @@
       </header>
 
       <section>
-        <div class="container-fluid" style="background-color: var(--cor3);">
-            <div class="container texto">
-                <img src="img/icon.png" width="50px" style="margin-bottom: 4vw;">
-                <p style="font-size: 2.5vh;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <div class="container-fluid" style="background-color: #590000;">
+            <div class="container text-center" style="padding: 10vh 7vw;">
+                <img src="img/logo.png" width="50px" style="margin-bottom: 4vw;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
             </div>
         </div>
       </section>
 
-      <article class="container-fluid" style="background-color: #902626;">
-        <h1 class="display-4" style="padding: 15vh; text-align: center; ">Licenciatura</h1>
+      <article style="background-color: #993535; ">
 
-        <section>
-        <div class="container conteudo " style="font-size: 2.4vh;">
-          <h1 class="display-5" style="margin-bottom: 5vh;">Curso 1</h1>
-          <p style="margin-bottom: 5vh; text-indent: 50px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="container-fluid" style="border-bottom: 1px solid var(--cor2);">
+            <h3 class="d-inline-block b b2">Licenciatura</h3>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="img/img1.jpg" id="img-conteudo">
-              </div>
-              <div class="col-lg-6">
-                <p><b>Graduação:</b>  is simply dummy text of the printing and typesetting industry.</p>
-                <p><b>Áreas:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellendus magni rerum pariatur. Tempora vel maxime quod, pariatur ea velit necessitatibus voluptatibus assumenda culpa, accusantium recusandae praesentium distinctio corporis iste.</p>
-                <p><b>Perfil do Aluno:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae libero iste autem cumque quis ad et. Libero velit sint esse cum molestias architecto asperiores illo sapiente aperiam atque. Eaque, nam?</p>
-              </div>
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="letras">Letras</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="https://www5.usp.br/ensino/graduacao/cursos-oferecidos/letras/" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="https://portal.unisepe.com.br/univr/letras/" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="https://www.iel.unicamp.br/br/content/licenciatura-em-letras-diurno-0" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="https://www.assis.unesp.br/#!/ensino/graduacao/cursos/letras/" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
-        <div class="container" style="padding: 5vw;">
-          <div class="row">
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin-bottom: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 1
-              </a>
+        <!--Licenciatura curso 2 -->
+        <div class="container-fluid" style="border-bottom: 1px solid transparent">
+
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="linguistica">Linguística</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
             </div>
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 2
-              </a>
-            </div>
-            
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 3
-              </a>
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 4
-              </a>
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="https://linguistica.fflch.usp.br/" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="https://www.upa.unicamp.br/linguistica/" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
             </div>
 
-          </div>
         </div>
 
-</section>
-      </article>
+       </article>
 
+       <article style="background-color: #811A1A;">
 
-      <article class="container-fluid" style="background-color: #831313;">
-        <h1 class="display-4" style="padding: 15vh; text-align: center; ">Bacharelado</h1>
+        <!-- Bacharelado curso 1 -->
 
-        <section>
-        <div class="container conteudo " style="font-size: 2.4vh;">
-          <h1 class="display-5" style="margin-bottom: 5vh;">Curso 2</h1>
-          <p style="margin-bottom: 5vh; text-indent: 50px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="container-fluid" style="border-bottom: 1px solid var(--cor2);">
+            <h3 class="d-inline-block b b2">Bacharelado</h3>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="img/img1.jpg" id="img-conteudo">
-              </div>
-              <div class="col-lg-6">
-                <p><b>Graduação:</b>  is simply dummy text of the printing and typesetting industry.</p>
-                <p><b>Áreas:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellendus magni rerum pariatur. Tempora vel maxime quod, pariatur ea velit necessitatibus voluptatibus assumenda culpa, accusantium recusandae praesentium distinctio corporis iste.</p>
-                <p><b>Perfil do Aluno:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae libero iste autem cumque quis ad et. Libero velit sint esse cum molestias architecto asperiores illo sapiente aperiam atque. Eaque, nam?</p>
-              </div>
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="ap">Artes Plásticas</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
-        <div class="container" style="padding: 5vw;">
-          <div class="row">
+        <!-- Bacharelado curso 2 -->
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin-bottom: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 1
-              </a>
+        <div class="container-fluid" style="border-bottom: 1px solid var(--cor2);">
+
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="ac">Artes Cênicas</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
             </div>
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 2
-              </a>
-            </div>
-            
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 3
-              </a>
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 4
-              </a>
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
             </div>
 
-          </div>
         </div>
 
-</section>
-      </article>
+        <!-- Bacharelado curso 3 -->
 
+        <div class="container-fluid" style="border-bottom: 1px solid transparent">
 
-      
-      <article class="container-fluid">
-        <h1 class="display-4" style="padding: 15vh; text-align: center; ">Tecnólogo</h1>
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="fono">Fonoaudiologia</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
 
-        <section>
-        <div class="container conteudo " style="font-size: 2.4vh;">
-          <h1 class="display-5" style="margin-bottom: 5vh;">Curso 3</h1>
-          <p style="margin-bottom: 5vh; text-indent: 50px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="img/img1.jpg" id="img-conteudo">
-              </div>
-              <div class="col-lg-6">
-                <p><b>Graduação:</b>  is simply dummy text of the printing and typesetting industry.</p>
-                <p><b>Áreas:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellendus magni rerum pariatur. Tempora vel maxime quod, pariatur ea velit necessitatibus voluptatibus assumenda culpa, accusantium recusandae praesentium distinctio corporis iste.</p>
-                <p><b>Perfil do Aluno:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae libero iste autem cumque quis ad et. Libero velit sint esse cum molestias architecto asperiores illo sapiente aperiam atque. Eaque, nam?</p>
-              </div>
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    
+       </article>
+
+       <article>
+
+        <!-- Tecnólogo curso 1 -->
+
+        <div class="container-fluid" style="border-bottom: 1px solid var(--cor2);">
+            <h3 class="d-inline-block b b2">Tecnólogo</h3>
+
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="fotografia">Fotografia</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
-        <div class="container" style="padding: 5vw;">
-          <div class="row">
+        <!-- Tecnólogo curso 2 -->
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 1
-              </a>
+        <div class="container-fluid" style="border-bottom: 1px solid var(--cor2);">
+
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="moda">Design de Moda</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
             </div>
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 2
-              </a>
-            </div>
-            
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 3
-              </a>
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="col-sm-3">
-              <a class="btn btn-floating m-1 text-white" href="#!" role="button" style="background-color: var(--cor5); border-radius: 50px; margin: 1vh;">
-                <img src="img/usp-logo.png" id="img-btn">
-                Universidade 4
-              </a>
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
             </div>
 
-          </div>
         </div>
 
-</section>
-      </article>
+        <!-- Tecnólogo curso 3 -->
 
+        <div class="container-fluid" style="border-bottom: 1px solid transparent">
 
+            <div class="container" style="margin-bottom: 5vh;">
+                <h1 class="display-3"style="margin: 20vh 0vh 13vh;" id="dg">Design Gráfico</h1>  
+                <h2>Sobre o Curso</h2>
+                <br>
 
-      <footer style="bottom: 0; background-color: var(--cor3);">
-        <div class="container footer">
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2>Mercado de Trabalho</h2>
+                        <br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    <div class="col-sm" style="text-align: right;">
+                        <img src="img/foto-curso.jpg" style="border-radius: 20px; max-height: 100%; margin: 4vh 0px; max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="background-color: var(--cor3); color: var(--cor1); border-radius: 20px; padding: 4vh 6vh 0px; max-width: 90%;">
+                <div class="row">
+                    <div class="col-12" style="margin-bottom: 2vh;">
+                        
+                        <div class="d-flex justify-content-around mb-3 text-center">
+                            <button data-bs-toggle="collapse" data-bs-target="#demo1"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Lugares de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo2"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Áreas de Trabalho</button>
+                            <button data-bs-toggle="collapse" data-bs-target="#demo3"  style="color: var(--cor1); font-weight: bold; border: none; background-color: transparent; margin-right: 3vw; font-size: large;">Perfil do Estudante</button>
+                        </div>
+
+                    </div>
+
+                    <div id="demo1" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply1
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo2" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply2
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="demo3" class="collapse">
+                        <div class="row">
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                            <p class="e">
+                                <img src="img/seta.png" width="35px" style="transform: rotate(-0.25turn);">
+                                Lorem Ipsum is simply3
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container" style="margin: 10vh auto;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                            <img class="card-img-bottom" src="img/logo-usp.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unisepe.png" alt="Card image" style="width: 80%;">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unicamp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card card-2">
+                            <div class="card-body">
+                                <a href="#" class="btn">
+                                  <img src="img/seta3.png" width="25px">
+                                </a>
+                              </div>
+                              <p class="text-center">
+                                <img class="card-img-bottom" src="img/logo-unesp.png" alt="Card image" style="width: 80%">
+                            </p>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    
+       </article>
+
+       <footer style="background-color: #590000;">
+        <div class="container" style="padding-top: 15vh; padding-bottom: 10vh;">
           <div class="row">
             <div class="col" style="margin-left: 3vw;">
-              <h1>Linguística,</h1>
-              <h1>Letras e Artes</h1>
-              <p class="texto-footer">Lorem Ipsum is simply dummy text of the print</p>
+              <h1 style="font-weight: 300;">Linguística,</h1>
+              <h1 style="font-weight: 300;">Letras e Artes</h1>
+              <h6 class="d-inline-block b">
+                <img src="img/icon.ico" style="margin-right: 5px;" width="22px">
+                Lorem ipsum
+            </h6>
             </div>
-            <div class="col" style="margin-right: 3vw; text-align: right;">
+            <div class="col" style="text-align: right; margin-right: 3vw;">
               <a href="#" id="link-f">link1</a>
               <a href="#" id="link-f">link2</a>
               <a href="#" id="link-f">link3</a>
@@ -302,13 +1908,9 @@
           </div>
         </div>
 
-        <div class="container text-center">
-          <div style="padding-top: 3vw;">
-            <a href="#"><img src="img/fb.png" id="icon"></a>
-            <a href="#"><img src="img/ig.png" id="icon"></a>
-            <a href="#"><img src="img/tw.png" id="icon"></a>
-          </div>
-        </div>
+
+
+
 
       </footer>
     
