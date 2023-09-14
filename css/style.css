@@ -1,108 +1,91 @@
 :root{
     --cor1 : #6A0000;
-    --cor2 : #FFFFFF;
-    --cor3 : #FFF7EC;
-    --fonte : montserrat;
+    --cor2 : #C86A6A;
+    --cor3 : #A3AA95;
+    --cor4 : #0B2A2C;
+    --cor5 : #E5A448;
+    --fonte1 : Montserrat;
+    --fonte2 : Urbanist;
 }
 
 body{
-    background-color: var(--cor1);
-    font-family: montserrat;
-    color: var(--cor2);
-}
-
-nav{
-    border-bottom: solid 1px var(--cor2);
-    background-color: var(--cor1);
+   background-color: #FAF2E5;
+   font-family: montserrat;
+   color: #000000;
 }
 
 .dropdown-menu{
-    background-color: #b4463e;
+    background-color: var(--cor2);
     border: none;
 }
 
 .dropdown-item{
-    color: var(--cor2);
+    color: #ffffff;
 }
 
 .menu{
-    background-color: #db7068;
-}
-
-.b{
-    margin: 10vh 0px;
-    padding: 12px 2vw;
-    border-radius: 50px;
     background-color: var(--cor3);
-    color: var(--cor1);
-}
-
-.card-1{
-    background-color: #831313;
-    color: var(--cor2);
-    border-radius: 15px;
-    border: none;
-    box-shadow: 15px -15px 0px #993535;
-    padding: 2vh 4vh;
-    max-width: 100%;
-}
-
-.title-2{
-    padding: 5vh 0px;
-}
-
-.graduacao{
-    background-color: #760D0D;
-    padding: 12px 1vw;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: none;
-    font-weight: 400;
-}
-
-.btn-card{
-    background-color: var(--cor2);
-    border-radius: 50%;
-    padding: 3px;
-    margin-top: 3vw;
 }
 
 p{
-    font-size: 2.5vh;
-    line-height: 32px;
-    padding-bottom: 10vh;
+    font-size: 2.8vh;
 }
 
-.b2{
-    position: relative;
-    left: 5vw;
+.titulo1{
+    font-family: var(--fonte2);
+    font-weight: 600;
 }
 
-.e{
-    margin: 0 auto 5vh;
-    padding: 12px 2vw;
+.titulo2{
+    font-family: var(--fonte2);
+    font-weight: 900;
+    padding: 8px 3vw;
     border-radius: 50px;
-    border: 1.5px solid var(--cor1);
-    max-width: 70%;
+    background-color: var(--cor3);
+    color: #8D2828;
+    text-decoration: none;
 }
 
-.card-2{
-    margin: 0 auto 15vh;
-    box-shadow: 10px 12px 0px #4b0000;
+.graduação{
+    margin: 10vh 0px;
+    padding: 12px 3vw;
+    font-family: var(--fonte2);
+    border-radius: 50px;
+    color: #FAF2E5;
+}
+
+.titulo3{
+    margin: 20vh 0vh 13vh;
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    text-decoration: underline 5px var(--cor2);
+}
+
+.titulo4{
+    font-family: var(--fonte2);
+    font-weight: 600;
+}
+
+.card{
     border: none;
-    border-radius: 20px;
-    color: var(--cor2);
-    background-color: #590000;
-    height: 53vh;
+    box-shadow: 12px 20px 0px #F0D1D1;
+    margin-bottom: 15vh;
 }
 
-.texto-footer{
-    max-width: 22vw;
-    margin: 4vh 0 10vh;
+.card-text{
+    font-size: 3vh;
+    margin: 2vh 1vh;
+}
+
+.btn-card{
+    margin: 2vh 1vh;
+    background-color: #F0D1D1;
+    font-size: medium;
+    font-weight: 600;
 }
 
 #link-f{
     color: var(--cor2);
     text-decoration: none;
-    margin: 1vw;
+    margin-left: 1vw;
 }
